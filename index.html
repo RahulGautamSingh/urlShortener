@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>URL Shortener</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(207, 191, 40)
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>URL Shortener</h1>
+        <form action="http://localhost:3000/shortUrl" method="POST">
+            <input type="text" width="200px" height="30px" placeholder="url here" name="url">
+            <button type="submit">Shorten</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
